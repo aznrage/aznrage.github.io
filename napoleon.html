@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Story of Napoleon Bonaparte</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1a1a1d;
+            color: #f4f4f4;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #2d2d30;
+            border-radius: 12px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before, .container::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .container::before {
+            width: 400px;
+            height: 400px;
+            top: -100px;
+            left: -100px;
+        }
+
+        .container::after {
+            width: 500px;
+            height: 500px;
+            bottom: -150px;
+            right: -150px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            text-align: center;
+            color: #ffdf00;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: #ffdf00;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2em;
+            color: #e0e0e0;
+            margin-top: 40px;
+            border-bottom: 3px solid #ffdf00;
+            padding-bottom: 10px;
+            position: relative;
+        }
+
+        h2::before {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: #ffdf00;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+
+        .timeline {
+            list-style: none;
+            padding: 0;
+            margin: 50px 0;
+        }
+
+        .timeline-item {
+            margin-bottom: 50px;
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            background: #ffdf00;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            box-shadow: 0 0 10px rgba(255, 223, 0, 0.8);
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 18px;
+            width: 2px;
+            height: calc(100% + 32px);
+            background: #ffdf00;
+        }
+
+        .timeline-item h3 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #ffdf00;
+            font-weight: 700;
+        }
+
+        .timeline-item p {
+            margin: 10px 0 0;
+            color: #ccc;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #f4f4f4;
+            margin-top: 50px;
+            border-radius: 0 0 12px 12px;
+            font-size: 0.9em;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .footer p a {
+            color: #ffdf00;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer p a:hover {
+            color: #ffffff;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container {
+            animation: fadeIn 1s ease-out;
+        }
+
+        .timeline-item {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Story of Napoleon Bonaparte</h1>
+        <p>Napoleon Bonaparte, a name synonymous with military genius and political ambition, rose from modest beginnings to become one of history's most influential figures. This page explores the key moments of his extraordinary life.</p>
+
+        <h2>Early Life</h2>
+        <p>Napoleon was born on August 15, 1769, in Corsica, just months after the island was transferred to France from Genoa. His family, of noble Italian descent, was part of the minor Corsican nobility. Napoleon attended military school in mainland France, where he quickly distinguished himself as a brilliant strategist and leader.</p>
+
+        <h2>Rise to Power</h2>
+        <p>In the wake of the French Revolution, Napoleon's military acumen and ambition led him to prominence. By 1799, he had become a leading figure in the French government, orchestrating a coup d'état that established him as First Consul. His reforms and policies began to reshape France, consolidating his power.</p>
+
+        <h2>Emperor of the French</h2>
+        <p>In 1804, Napoleon declared himself Emperor of the French, solidifying his control over the nation. His reign was marked by a series of military campaigns across Europe, known as the Napoleonic Wars. Napoleon's strategies led to significant victories, but also to a series of conflicts with various European coalitions.</p>
+
+        <h2>Exile and Return</h2>
+        <p>After a series of defeats and the invasion of France by allied forces, Napoleon was exiled to the island of Elba in 1814. However, he escaped and returned to France for a brief period known as the Hundred Days. His final defeat at the Battle of Waterloo in 1815 led to his second exile, this time to the island of Saint Helena in the South Atlantic Ocean.</p>
+
+        <h2>Legacy</h2>
+        <p>Napoleon died on May 5, 1821, on Saint Helena. His legacy is a complex tapestry of military brilliance, controversial politics, and enduring impact on European and global history. The Napoleonic Code, a major reform of legal systems, remains influential to this day.</p>
+
+        <ul class="timeline">
+            <li class="timeline-item">
+                <h3>1769 - Birth in Corsica</h3>
+                <p>Napoleon was born in Ajaccio, Corsica, which had been ceded to France by the Republic of Genoa just months earlier.</p>
+            </li>
+            <li class="timeline-item">
+                <h3>1785 - Graduates from Military School</h3>
+                <p>Napoleon graduates from the prestigious École Militaire in Paris, beginning his military career.</p>
+            </li>
+            <li class="timeline-item">
+                <h3>1799 - Coup d'état</h3>
+                <p>Napoleon seizes power in France through the Coup of 18 Brumaire, becoming First Consul.</p>
+            </li>
+            <li class="timeline-item">
+                <h3>1804 - Crowned Emperor</h3>
+                <p>Napoleon crowns himself Emperor of the French in a lavish ceremony at Notre-Dame Cathedral in Paris.</p>
+            </li>
+            <li class="timeline-item">
+                <h3>1815 - Battle of Waterloo</h3>
+                <p>Napoleon suffers a final defeat at the Battle of Waterloo, leading to his exile to Saint Helena.</p>
+            </li>
+            <li class="timeline-item">
+                <h3>1821 - Death in Exile</h3>
+                <p>Napoleon dies on the remote island of Saint Helena, ending his tumultuous life.</p>
+            </li>
+        </ul>
+
+        <div class="footer">
+            <p>© 2024 Great Leaders. All Rights Reserved. |
+ <a href="pps.html">Privacy Policy </a> |
+ <a href="homepageWWII.html">Return to Home</a></p>
+        </div>
+    </div>
+</body>
+</html>
